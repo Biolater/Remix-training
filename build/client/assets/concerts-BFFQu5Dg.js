@@ -1,0 +1,1 @@
+import{j as r}from"./jsx-runtime-D5FwP9M8.js";import{a as e,L as o}from"./components-Bg2j0m6x.js";Array.from({length:20});function d(){const{concerts:s}=e();return r.jsxs("div",{children:[s.map((n,t)=>r.jsxs(o,{to:`/concerts/${t}`,children:["Concert ",t]},t)),r.jsx(o,{to:"/concerts/add",children:r.jsx("button",{children:"Add New"})})]})}export{d as default};

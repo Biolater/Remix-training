@@ -1,7 +1,7 @@
 import type { LoaderFunctionArgs } from "@remix-run/node";
 import invariant from "tiny-invariant";
 import type { FunctionComponent } from "react";
-import { Form, useLoaderData } from "@remix-run/react";
+import { Form, json, useLoaderData } from "@remix-run/react";
 
 import { getContact } from "../data";
 
@@ -15,7 +15,7 @@ export const loader = async ({
   if (!contact) {
     throw new Response("Not Found", { status: 404 });
   }
-  return Response.json({ contact });
+  return json({ contact });
 };
 
 export default function Contact() {
